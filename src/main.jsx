@@ -10,15 +10,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <section className="section">
     <Titulo />
     
-    <div className="btn-container">
-        <Boton id="todo" texto="Todas las categorias"/>
-        <Boton id="cat1" texto="Naturaleza"/>
-        <Boton id="cat2" texto="Mar"/>
-        <Boton id="cat3" texto="Parapente"/>
-    </div>
+    <Boton />
+    
 
     <div className="section-center">
-        <Slider />
+      <Slider />
     </div>
   </section>
 )

@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Titulo from './titulo.jsx' 
-import Slider from './slider.jsx' 
+import Titulo from './titulo.jsx'
 import Boton from './botones.jsx' 
 import './index.css' 
 
@@ -9,12 +8,6 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <section className="section">
     <Titulo />
-    
     <Boton />
-    
-
-    <div className="section-center">
-      <Slider />
-    </div>
   </section>
 )

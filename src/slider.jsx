@@ -7,6 +7,7 @@ function Slider({categoriaSelect}) {
     //Se hace una variable contador (counter) y se inicializa a 1.
     const [counter, setCounter] = useState(1);
 
+    //El timer que hará que cada dos segundos vaya aumentando el contador y de esta manera, cambiando de foto.
     useEffect(() => {
         const timer = setTimeout(() => {
             let cont = counter >= data.length ? 1 : (counter + 1);
@@ -31,10 +32,6 @@ function Slider({categoriaSelect}) {
             })}
         </div>
     );
-
-
-        
-    
   }
   
   export default Slider

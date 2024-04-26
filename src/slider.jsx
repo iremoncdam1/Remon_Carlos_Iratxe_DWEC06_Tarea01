@@ -12,6 +12,7 @@ function Slider({categoriaSelect}) {
             let cont = counter >= data.length ? 1 : (counter + 1);
             setCounter(cont);
         }, 2000);
+        
     });
 
     return (
@@ -20,7 +21,7 @@ function Slider({categoriaSelect}) {
                 //className={ ((id==index) ? 'activeSlide' : (id > index) ? "nextSlide" : 'lastSlide')}
                 if (categoria === categoriaSelect || categoriaSelect === "Todo") {
                     return (
-                        <article key={id} className="activeSlide">
+                        <article key={id} className={ ((id==counter) ? 'activeSlide' : (id > counter) ? "nextSlide" : 'lastSlide')}>
                             <img src={src} alt={img} className="person-img" />
                             <h4>{img}</h4>
                             <p className="title">{categoria}</p>
